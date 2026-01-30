@@ -1,99 +1,76 @@
 # VideoAnalyse
 
-🏎️ Analyse Vidéo de Formule 1 depuis une caméra Halo
-📌 Description du projet
+## 📌 Description du projet
 
 Ce projet a pour objectif de développer un programme Python capable d’analyser une vidéo embarquée de Formule 1, filmée depuis la caméra halo, afin d’extraire et d’afficher automatiquement plusieurs informations clés :
 
-📈 Estimation de la vitesse du véhicule
+- 📈 Estimation de la vitesse du véhicule  
+- 🚦 Détection des phases de freinage  
+- 🔁 Identification des dépassements  
+- 🚗 Reconnaissance des voitures lors des dépassements  
 
-🚦 Détection des phases de freinage
+Le projet s’appuie sur des techniques de vision par ordinateur, de traitement vidéo et de machine learning appliquées au sport automobile.
 
-🔁 Identification des dépassements
+---
 
-🚗 Reconnaissance des voitures lors des dépassements
+## 🎯 Objectifs
 
-Le projet combine des techniques de vision par ordinateur, de traitement vidéo et de machine learning, appliquées à un contexte réel et complexe : la course automobile.
+- Exploiter une vidéo embarquée (onboard halo)
+- Extraire des informations dynamiques à partir d’images
+- Concevoir une architecture modulaire et évolutive
+- Approfondir les compétences en :
+  - Vision par ordinateur
+  - Analyse vidéo
+  - Data science appliquée au sport
 
-🎯 Objectifs
+---
 
-Exploiter une vidéo embarquée (onboard halo)
+## 🧠 Fonctionnalités
 
-Extraire des informations dynamiques à partir d’images
+### Fonctionnalités actuelles / prévues
 
-Mettre en place une architecture modulaire et évolutive
+- [ ] Chargement et lecture d’une vidéo onboard F1
+- [ ] Détection de la piste et des repères visuels
+- [ ] Estimation de la vitesse à partir du déplacement image par image
+- [ ] Détection des phases de freinage (décélération + indices visuels)
+- [ ] Détection des dépassements
+- [ ] Identification de la voiture dépassée (couleur, numéro, livrée)
+- [ ] Affichage des informations en surimpression sur la vidéo
 
-Approfondir les compétences en :
+---
 
-Computer Vision
+## 🛠️ Technologies utilisées
 
-Analyse vidéo
+- Python 3
+- OpenCV
+- NumPy
+- YOLO / CNN pour la détection d’objets
 
-Data science appliquée au sport automobile
+---
 
-🧠 Fonctionnalités
-✔️ Fonctionnalités actuelles / prévues
+## 🗂️ Structure du projet
 
- Chargement et lecture d’une vidéo onboard F1
 
- Détection de la piste et des lignes de référence
 
- Estimation de la vitesse à partir du déplacement image → image
+---
 
- Détection des zones de freinage (décélération + indices visuels)
+## 🚀 Installation
 
- Détection des dépassements
+1. Cloner le dépôt :
 
- Identification de la voiture dépassée (numéro, couleur, livrée)
+git clone https://github.com/Adrn3/VideoAnalyse.git
 
- Affichage des données en surimpression sur la vidéo
-
- Export des données (CSV / JSON)
-
-🛠️ Technologies utilisées
-
-Python 3
-
-OpenCV – traitement d’image et analyse vidéo
-
-NumPy – calculs numériques
-
-PyTorch / TensorFlow (optionnel) – détection et classification
-
-YOLO / CNN (optionnel) – reconnaissance des voitures
-
-Matplotlib – visualisation des données
-
-🗂️ Structure du projet
-├── data/
-│   └── videos/          # Vidéos onboard F1
-├── src/
-│   ├── video_loader.py
-│   ├── speed_estimation.py
-│   ├── braking_detection.py
-│   ├── overtake_detection.py
-│   ├── car_identification.py
-│   └── main.py
-├── models/              # Modèles ML entraînés
-├── outputs/
-│   ├── videos/
-│   └── data/
-├── requirements.txt
-└── README.md
-
-🚀 Installation
-
-Cloner le dépôt :
-
-git clone https://github.com/
 cd f1-halo-video-analysis
 
 
-Installer les dépendances :
+2. Installer les dépendances :
 
 pip install -r requirements.txt
 
-▶️ Utilisation
+
+---
+
+## ▶️ Utilisation
 
 Lancer l’analyse sur une vidéo :
 
@@ -101,39 +78,32 @@ python src/main.py --video data/videos/onboard.mp4
 
 
 Les résultats sont :
+- affichés en temps réel sur la vidéo
+- sauvegardés dans le dossier `outputs/`
 
-affichés en temps réel sur la vidéo
+---
 
-sauvegardés dans le dossier outputs/
+## ⚠️ Limitations
 
-⚠️ Limitations connues
+- La vitesse est une estimation basée sur la perspective vidéo
+- Les performances dépendent fortement de la qualité de la vidéo
+- Les vidéos compressées peuvent réduire la précision
+- Aucune donnée télémétrique officielle n’est utilisée
 
-La vitesse est une estimation, dépendante de la perspective et du calibrage
+---
 
-La reconnaissance des voitures dépend fortement de la qualité vidéo
+## 🔮 Améliorations futures
 
-Les vidéos TV compressées peuvent réduire la précision
+- Calibration précise avec dimensions réelles de la piste
+- Utilisation de données GPS ou télémétriques simulées
+- Interface graphique (GUI)
+- Analyse en temps réel
+- Support multi-caméras
 
-Le projet n’utilise pas de données télémétriques officielles
+---
 
-🔮 Améliorations futures
+## 👤 Auteur
 
-Calibration précise avec dimensions réelles de la piste
+Projet personnel développé par **Adrien Ponchard**
 
-Utilisation de données GPS simulées
-
-Interface graphique (GUI)
-
-Analyse multi-caméras
-
-Support temps réel
-
-📚 Sources & inspirations
-
-Vision par ordinateur appliquée au sport
-
-Analyse vidéo embarquée
-
-Projets open-source d’object detection
-
-Projet personnel développé par Adrien Ponchard
+N’hésitez pas à me contacter pour toute question ou suggestion.
