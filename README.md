@@ -1,13 +1,13 @@
 # VideoAnalyse
 
-## 📌 Description du projet
+## Description du projet
 
 Ce projet a pour objectif de développer un programme Python capable d’analyser une vidéo embarquée de Formule 1, filmée depuis la caméra halo, afin d’extraire et d’afficher automatiquement plusieurs informations clés :
 
-- 📈 Estimation de la vitesse du véhicule  
-- 🚦 Détection des phases de freinage  
-- 🔁 Identification des dépassements  
-- 🚗 Reconnaissance des voitures lors des dépassements  
+- Estimation de la vitesse du véhicule  
+- Détection des phases de freinage  
+- Identification des dépassements  
+- Reconnaissance des voitures lors des dépassements  
 
 Le projet s’appuie sur des techniques de vision par ordinateur, de traitement vidéo et de machine learning appliquées au sport automobile.
 
@@ -41,10 +41,10 @@ Le projet s’appuie sur des techniques de vision par ordinateur, de traitement 
 
 ## 🛠️ Technologies utilisées
 
-- Python 3
+- Python
 - OpenCV
 - NumPy
-- YOLO / CNN pour la détection d’objets
+- YOLO pour la détection d’objets
 
 ---
 
@@ -60,7 +60,7 @@ Le projet s’appuie sur des techniques de vision par ordinateur, de traitement 
 
 git clone https://github.com/Adrn3/VideoAnalyse.git
 
-cd f1-halo-video-analysis
+cd analyse-video-formule1
 
 
 2. Installer les dépendances :
@@ -79,7 +79,6 @@ python src/main.py --video data/videos/onboard.mp4
 
 Les résultats sont :
 - affichés en temps réel sur la vidéo
-- sauvegardés dans le dossier `outputs/`
 
 ---
 
@@ -92,18 +91,6 @@ Les résultats sont :
 
 ---
 
-## 🔮 Améliorations futures
-
-- Calibration précise avec dimensions réelles de la piste
-- Utilisation de données GPS ou télémétriques simulées
-- Interface graphique (GUI)
-- Analyse en temps réel
-- Support multi-caméras
-
----
-
 ## 👤 Auteur
 
 Projet personnel développé par **Adrien Ponchard**
-
-N’hésitez pas à me contacter pour toute question ou suggestion.
