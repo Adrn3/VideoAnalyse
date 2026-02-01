@@ -57,9 +57,9 @@ Le projet s’appuie sur des techniques de vision par ordinateur, de traitement 
 ## 🚀 Installation
 
 1. Cloner le dépôt :
-
+```bash
   git clone https://github.com/Adrn3/VideoAnalyse.git
-
+```
 cd analyse-video-formule1
 
 
