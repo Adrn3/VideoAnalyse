@@ -57,13 +57,13 @@ Le projet s’appuie sur des techniques de vision par ordinateur, de traitement 
 ## 🚀 Installation
 
 1. Cloner le dépôt :
-
-git clone https://github.com/Adrn3/VideoAnalyse.git
-
+'''bash
+  git clone https://github.com/Adrn3/VideoAnalyse.git
+'''
 cd analyse-video-formule1
 
 
-2. Installer les dépendances :
+3. Installer les dépendances :
 
 pip install -r requirements.txt
 
