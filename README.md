@@ -60,7 +60,7 @@ Le projet s’appuie sur des techniques de vision par ordinateur, de traitement 
 ```bash
   git clone https://github.com/Adrn3/VideoAnalyse.git
 
-cd analyse-video-formule1
+  cd analyse-video-formule1
 ```
 
 3. Installer les dépendances :
@@ -73,9 +73,9 @@ cd analyse-video-formule1
 ## ▶️ Utilisation
 
 Lancer l’analyse sur une vidéo :
-
-python src/main.py --video data/videos/onboard.mp4
-
+```bash
+  python src/main.py --video data/videos/onboard.mp4
+```
 
 Les résultats sont :
 - affichés en temps réel sur la vidéo
